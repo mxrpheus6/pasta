@@ -1,9 +1,10 @@
 package com.me.pasta.entity;
 
-import com.me.pasta.model.Status;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "paste")
@@ -16,8 +17,7 @@ public class PasteBox {
     private Long id;
 
     private String data;
-
-    private Status status;
-
-    private Long expirationTimeSeconds;
+    private String hash;
+    private LocalDateTime lifetime;
+    boolean isPublic;
 }

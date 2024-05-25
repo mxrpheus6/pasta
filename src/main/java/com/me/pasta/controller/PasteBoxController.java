@@ -1,6 +1,8 @@
 package com.me.pasta.controller;
 
+import com.me.pasta.api.request.PasteBoxRequest;
 import com.me.pasta.entity.PasteBox;
+import com.me.pasta.util.HashUtil;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
@@ -21,7 +23,7 @@ public class PasteBoxController {
     }
 
     @PostMapping("/create")
-    public String createPaste(@RequestBody PasteBox pasteBox) {
-        return pasteBox.getData();
+    public String createPaste(@RequestBody PasteBoxRequest pasteBox) {
+        return HashUtil.generateHash(pasteBox);
     }
 }
