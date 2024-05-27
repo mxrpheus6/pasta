@@ -1,4 +1,5 @@
-# PasteBin API Application
+# Pasta
+# PasteBin Analog API Application
 
 This repository contains a simple REST API application that provides services similar to PasteBin for managing text pastes.
 
