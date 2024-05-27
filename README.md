@@ -68,7 +68,7 @@ The application will start on `http://localhost:8080`.
   ```http
   POST /pastebox-api/create
   ```
-  Request body
+  Request body:
   ```JSON
   {
     "data": "System.out.println('Hello world!')",
@@ -76,7 +76,7 @@ The application will start on `http://localhost:8080`.
     "public": "true"
   }
   ```
-  Response body
+  Response body:
   ```JSON
   {
     "url": "Adhu52pV",
