@@ -71,7 +71,7 @@ The application will start on `http://localhost:8080`.
   Request body:
   ```JSON
   {
-    "data": "System.out.println()",
+    "data": "System.out.println(\"Hello world!\")",
     "expirationTimeMin": 1,
     "public": "true"
   }
@@ -80,7 +80,7 @@ The application will start on `http://localhost:8080`.
   ```JSON
   {
     "url": "Adhu52pV",
-    "data": "System.out.println()",
+    "data": "System.out.println(\"Hello world!\")",
     "lifetime": "00:45:31 | 28.05.2024",
     "public": true
   }
