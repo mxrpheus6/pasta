@@ -37,7 +37,8 @@ This is a basic REST API application built using the Spring Boot framework. The 
 Make sure you have the following installed:
 
 - Java (version 17 or higher)
-- Gradle
+- Maven
+- MySQL
 
 ### Installation
 
