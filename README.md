@@ -54,7 +54,7 @@ Make sure you have the following installed:
 3. Run the application:
 
     ```bash
-    java -jar build/libs/pasta-0.0.1.jar
+    java -jar pasta-0.0.1.jar
     ```
 
 The application will start on `http://localhost:8080`.
