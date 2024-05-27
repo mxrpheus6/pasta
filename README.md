@@ -11,9 +11,6 @@ This repository contains a simple REST API application that provides services si
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 - [Usage](#usage)
-- [Endpoints](#endpoints)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
 
 ## Introduction
 
