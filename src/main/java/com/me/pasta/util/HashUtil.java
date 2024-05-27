@@ -11,7 +11,7 @@ import java.util.Base64;
 public class HashUtil {
 
     public static String generateHash(PasteBoxRequest request) {
-        String input = request.getData() + request.getStatus().toString() + LocalDateTime.now();
+        String input = request.getData() + request.getExpirationTimeMin().toString() + LocalDateTime.now();
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] hash = digest.digest(input.getBytes(StandardCharsets.UTF_8));

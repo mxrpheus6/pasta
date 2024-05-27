@@ -1,5 +1,6 @@
 package com.me.pasta.entity;
 
+import com.me.pasta.api.response.PasteBoxResponse;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,8 +17,12 @@ public class PasteBox {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String data;
     private String hash;
+    private String data;
     private LocalDateTime lifetime;
     boolean isPublic;
+
+    public PasteBoxResponse toResponse() {
+        return new PasteBoxResponse(this.hash, this.getData(), this.lifetime, this.isPublic());
+    }
 }

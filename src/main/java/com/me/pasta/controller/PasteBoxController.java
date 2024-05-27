@@ -1,29 +1,32 @@
 package com.me.pasta.controller;
 
 import com.me.pasta.api.request.PasteBoxRequest;
-import com.me.pasta.entity.PasteBox;
-import com.me.pasta.util.HashUtil;
+import com.me.pasta.api.response.PasteBoxResponse;
+import com.me.pasta.service.PasteBoxService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
 import java.util.List;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("pastebox-api")
 public class PasteBoxController {
 
-    @GetMapping
-    public List<String> getPublicPasteList() {
-        return Collections.emptyList();
+    private final PasteBoxService pasteBoxService;
+
+    @PostMapping("/create")
+    public PasteBoxResponse createPaste(@RequestBody PasteBoxRequest pasteBox) {
+        return pasteBoxService.createPaste(pasteBox);
     }
 
     @GetMapping("/{hash}")
-    public String getByHash(@PathVariable String hash) {
-        return hash;
+    public PasteBoxResponse getByHash(@PathVariable String hash) {
+        return pasteBoxService.getByHash(hash);
     }
 
-    @PostMapping("/create")
-    public String createPaste(@RequestBody PasteBoxRequest pasteBox) {
-        return HashUtil.generateHash(pasteBox);
+    @GetMapping("/public/{size}")
+    public List<PasteBoxResponse> getPublicPasteList(@PathVariable Long size) {
+        return pasteBoxService.getPublicPasteList(size);
     }
 }
