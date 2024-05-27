@@ -8,8 +8,6 @@ This repository contains a simple REST API application that provides services si
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
 - [Usage](#usage)
 
 ## Introduction
