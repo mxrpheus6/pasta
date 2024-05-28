@@ -83,6 +83,44 @@ The application will start on `http://localhost:8080`.
     "public": true
   }
   ```
+
+- **Get paste by URL:**
+
+  ```http
+  GET /pastebox-api/Adhu52pV
+  ```
+  Response body:
+  ```JSON
+  {
+    "url": "Adhu52pV",
+    "data": "System.out.println(\"Hello world!\")",
+    "lifetime": "00:45:31 | 28.05.2024",
+    "public": true
+  }
+  ```
+
+- **Get list of last public pastes by amount:**
+
+  ```http
+  GET /pastebox-api/public/2
+  ```
+  Response body:
+  ```JSON
+  [
+    {
+        "url": "16O72OSW",
+        "data": "Hello, world! My name is mxrpheus",
+        "lifetime": "15:20:40 | 28.05.2024",
+        "public": true
+    },
+    {
+        "url": "VqFXMM-s",
+        "data": "#include <stdio.h>",
+        "lifetime": "14:25:14 | 28.05.2024",
+        "public": true
+    }
+]
+  ```
   
 ## Contributing
 
