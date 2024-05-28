@@ -55,7 +55,7 @@ Make sure you have the following installed:
     java -jar pasta-0.0.1.jar
     ```
 
-The application will start on `http://localhost:8080`.
+The application will start on `http://localhost:8080`
 
 ## Usage
 
@@ -119,7 +119,7 @@ The application will start on `http://localhost:8080`.
         "lifetime": "14:25:14 | 28.05.2024",
         "public": true
     }
-]
+  ]
   ```
   
 ## Contributing
