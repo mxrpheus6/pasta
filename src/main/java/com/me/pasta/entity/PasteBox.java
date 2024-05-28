@@ -19,10 +19,11 @@ public class PasteBox {
 
     private String hash;
     private String data;
+    private LocalDateTime creationTime;
     private LocalDateTime lifetime;
     boolean isPublic;
 
     public PasteBoxResponse toResponse() {
-        return new PasteBoxResponse(this.hash, this.getData(), this.lifetime, this.isPublic());
+        return new PasteBoxResponse(this.hash, this.getData(), this.creationTime, this.lifetime, this.isPublic());
     }
 }

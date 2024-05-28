@@ -29,6 +29,7 @@ public class PasteBoxService {
         pasteBox.setData(request.getData());
         pasteBox.setHash(hash);
         pasteBox.setPublic(request.isPublic());
+        pasteBox.setCreationTime(LocalDateTime.now());
         pasteBox.setLifetime(LocalDateTime.now().plusMinutes(request.getExpirationTimeMin()));
 
         pasteBoxRepository.save(pasteBox);

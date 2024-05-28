@@ -10,15 +10,17 @@ import java.util.Locale;
 public class PasteBoxResponse {
     private String url;
     private String data;
+    private String creationTime;
     private String lifetime;
     private boolean isPublic;
 
-    public PasteBoxResponse(String url, String data, LocalDateTime lifetime, boolean isPublic) {
+    public PasteBoxResponse(String url, String data, LocalDateTime creationTime, LocalDateTime lifetime, boolean isPublic) {
         this.url = url;
         this.data = data;
         this.isPublic = isPublic;
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss | dd.MM.yyyy", Locale.ENGLISH);
         this.lifetime = lifetime.format(formatter);
+        this.creationTime = creationTime.format(formatter);
     }
 }
