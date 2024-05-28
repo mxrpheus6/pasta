@@ -79,6 +79,7 @@ The application will start on `http://localhost:8080`
   {
     "url": "Adhu52pV",
     "data": "System.out.println(\"Hello world!\")",
+    "creationTime": "00:44:31 | 28.05.2024",
     "lifetime": "00:45:31 | 28.05.2024",
     "public": true
   }
@@ -94,6 +95,7 @@ The application will start on `http://localhost:8080`
   {
     "url": "Adhu52pV",
     "data": "System.out.println(\"Hello world!\")",
+    "creationTime": "00:44:31 | 28.05.2024",
     "lifetime": "00:45:31 | 28.05.2024",
     "public": true
   }
@@ -110,12 +112,14 @@ The application will start on `http://localhost:8080`
     {
         "url": "16O72OSW",
         "data": "Hello, world! My name is mxrpheus",
+        "creationTime": "14:20:40 | 28.05.2024",
         "lifetime": "15:20:40 | 28.05.2024",
         "public": true
     },
     {
         "url": "VqFXMM-s",
         "data": "#include <stdio.h>",
+        "creationTime": "14:20:14 | 28.05.2024",
         "lifetime": "14:25:14 | 28.05.2024",
         "public": true
     }
